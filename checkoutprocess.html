@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a product checkout process page">
+    <meta name="keywords" content="Jewellery,gold,decoration,diamond">
+    <meta name="author" content="Jack">
+    <title>checkoutprocess</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-primary">
+    <!-- header  -->
+    <header class="w-full h-20 border flex items-center justify-center py-12 fixed top-0 z-10 bg-white">
+        <div class="flex gap-24">
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <span class="xxs:hidden lg:block">Summary</span>
+                <div
+                    class="w-5 h-5 relative bg-white border-2 border-sky-600 rounded-full grid place-items-center after:content-[' '] after:absolute after:w-52 after:h-1 after:-z-10 after:border-b-2 after:border-sky-600 after:left-2 after:top-1">
+                    <div class="w-2 h-2 bg-sky-600 rounded-full absolute"></div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-4 relative">
+                <span class="xxs:hidden lg:block">Contact Information</span>
+                <div
+                    class="w-5 h-5 relative bg-white border-2 rounded-full grid place-items-center after:content-[' '] after:absolute after:w-60 after:h-1 after:-z-10 after:border-b-2 after:border-dashed after:border-slate-200 after:left-2 after:top-1">
+                    <div class="w-2 h-2 bg-white rounded-full absolute"></div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <span class="xxs:hidden lg:block">Payment Information</span>
+                <div
+                    class="w-5 h-5 relative bg-white border-2  rounded-full grid place-items-center after:content-[' '] after:absolute sm:after:w-28 lg:after:w-48 after:h-1 after:-z-10 after:border-b-2 after:border-dashed after:border-slate-200 after:left-2 after:top-1">
+                    <div class="w-2 h-2 bg-white rounded-full absolute"></div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-4 ">
+                <span class="xxs:hidden lg:block">Review</span>
+                <div class="w-5 h-5 relative bg-white border-2  rounded-full grid place-items-center ">
+                    <div class="w-2 h-2 bg-white rounded-full absolute"></div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container w-11/12 m-auto h-full max-w-6xl border pt-24">
+        <!-- first section  starts-->
+        <section class="flex flex-col lg:flex-row border">
+            <div class="w-full lg:w-2/5 px-2 py-2">
+                <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                    alt="" class="w-full h-full object-cover rounded-md">
+            </div>
+
+            <div class="flex-1 px-2 py-2 relative">
+                <dl class="w-full pb-4">
+                    <dt class="hidden">description</dt>
+                    <dd class="font-bold text-lg">Oval French Cut Halo Engagement Set In 14K White Gold With A
+                        1.00 Ct.
+                        H-Color VS2-Clarity Emerald Cut Diamond</dd>
+                    <dt class="hidden">item</dt>
+                    <dd class="text-gray-600 font-medium text-base">Item#RB1077-WG14</dd>
+                    <dt class="hidden">Price</dt>
+                    <dd class="font-bold text-lg">$1,258.78</dd>
+                    <svg class="w-6 h-6 absolute top-3 -right-1" version="1.2" baseProfile="tiny"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 4c-4.419 0-8 3.582-8 8s3.581 8 8 8 8-3.582 8-8-3.581-8-8-8zm3.707 10.293c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-2.293-2.293-2.293 2.293c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023 0-1.414l2.293-2.293-2.293-2.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2.293 2.293 2.293-2.293c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-2.293 2.293 2.293 2.293z">
+                        </path>
+                    </svg>
+
+                </dl>
+
+                <form action="#">
+                    <div class="flex flex-col lg:flex-row px-4S">
+
+                        <div class="flex justify-between w-3/5 pb-4 gap-12">
+                            <div class="w-full lg:flex-1">
+                                <label for="ring-size">Ring Size</label>
+                                <select name="size" id="size" class="border pr-24">
+                                    <option value="0">Select size</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+
+                            <div class="w-full lg:flex-1">
+                                <label for="quantity">Quantity</label>
+                                <button class="flex gap-4 items-center border">
+                                    <svg class="w-4 h-4 " xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path>
+                                    </svg>
+                                    <span>1</span>
+                                    <svg class="w-4 h-4 " xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex-1">
+                            <label for="choose">Would you like to add a center Stone?</label>
+                            <div class="flex gap-8 items-center">
+                                <div class="inline-block">
+                                    <input id="yes" class="peer/yes" type="radio" name="status" checked />
+                                    <label for="yes" class="peer-checked/yes">Yes</label>
+                                </div>
+                                <div class="inline-block">
+                                    <input id="no" class="peer/no" type="radio" name="status" checked />
+                                    <label for="no" class="peer-checked/no">No</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex gap-8 items-center">
+                            <label for="plans">Select Protection Plans</label>
+                            <span><svg class="w-4 h-4 text-blue-600" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z">
+                                    </path>
+                                </svg></span>
+                        </div>
+                        <p>Enjoy peace of mind with a Care Plan from Jewellers Mutual.</p>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-col lg:flex-row w-full">
+                            <div class="flex flex-col lg:flex-row gap-2 col-span-6">
+                                <div class="w-full">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                        class="peer opacity-0 w-full h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="default-radio-1"
+                                        class="flex cursor-pointer  px-16 py-4 bg-white justify-center items-center h-10 w-full peer-checked:bg-blue-700 peer-checked:text-white text-[17px] text-sm font-medium text-gray-900 dark:text-gray-300">
+                                        <span><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M5 12l5 5l10 -10"></path>
+                                            </svg></span><span>NoPlan</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-span-6 divide-x-4">
+                                <div class="w-full">
+                                    <input id="default-radio-2" type="radio" value="" name="default-radio"
+                                        class="peer opacity-0 w-full h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="default-radio-2"
+                                        class="flex cursor-pointer  px-16 py-4 bg-white justify-center items-center h-10 w-full peer-checked:bg-blue-700 peer-checked:text-white text-[17px] text-sm font-medium text-gray-900 dark:text-gray-300"><span>3Years</span><span>$180.00</span></label>
+                                </div>
+                            </div>
+
+                            <div className="col-span-6 divide-x-2">
+                                <div class="w-full">
+                                    <input id="default-radio-3" type="radio" value="" name="default-radio"
+                                        class="peer opacity-0 w-full h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="default-radio-3"
+                                        class="flex cursor-pointer  px-16 py-4 bg-white justify-center items-center h-10 w-full peer-checked:bg-blue-700 peer-checked:text-white text-[17px] text-sm font-medium text-gray-900 dark:text-gray-300"><span>Lifetime</span><span>$425.00</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="inline-block">
+                    <span>Want to add engraving?</span>
+                    <span class="text-blue-800 font-medium">+ Add Engraving $30.00</span>
+                </div>
+                <div>
+                    <h1 class="font-medium">Matching Items</h1>
+                    <div class="relative overflow-x-auto flex flex-nowrap lg:flex flex-row  gap-2">
+
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+
+                        </div>
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+
+                        </div>
+
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+                        </div>
+
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+                        </div>
+
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+                        </div>
+
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+                        </div>
+
+                        <svg class="w-8 h-8 absolute top-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                            fill="none">
+                            <path
+                                d="M6.146 10.146l-.353.354.707.707.354-.353-.708-.708zM9.5 7.5l.354.354.353-.354-.353-.354L9.5 7.5zM6.854 4.146L6.5 3.793l-.707.707.353.354.708-.708zm0 6.708l3-3-.708-.708-3 3 .708.708zm3-3.708l-3-3-.708.708 3 3 .708-.708zM7.5 1A6.5 6.5 0 0114 7.5h1A7.5 7.5 0 007.5 0v1zM1 7.5A6.5 6.5 0 017.5 1V0A7.5 7.5 0 000 7.5h1zM7.5 14A6.5 6.5 0 011 7.5H0A7.5 7.5 0 007.5 15v-1zm0 1A7.5 7.5 0 0015 7.5h-1A6.5 6.5 0 017.5 14v1z"
+                                fill="currentColor"></path>
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="flex flex-col w-full lg:flex-row justify-between gap-6">
+            <article class="border flex flex-1 justify-between px-2 py-4">
+                <div class="w-16">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                        alt="" class="w-12 h-full object-cover border">
+                </div>
+                <dl class="flex-1 px-2">
+                    <dt class="hidden">description</dt>
+                    <dd class="flex justify-between"><span class="font-medium"> Compliment Appraisals</span> <span
+                            class="font-bold text-base">$00.0</span> </dd>
+                    <dt class="hidden">Items</dt>
+
+                    <dd class="text-gray-600 font-medium text-xs">Item#RB1077-WG14</dd>
+                </dl>
+            </article>
+
+            <article class="border flex flex-1 justify-between px-2 py-4">
+                <div class="w-16">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                        alt="" class="w-12 h-full object-cover border">
+                </div>
+                <dl class="flex-1 px-2">
+                    <dt class="hidden">description</dt>
+                    <dd class="flex justify-between"><span class="font-medium"> Compliment Appraisals</span> <span
+                            class="font-bold text-base">$00.0</span> </dd>
+                    <dt class="hidden">Items</dt>
+
+                    <dd class="text-gray-600 font-medium text-xs">Item#RB1077-WG14</dd>
+                </dl>
+            </article>
+        </section>
+         <!-- first section ends  -->
+       
+
+         <!-- second section starts  -->
+        <section class="flex flex-col lg:flex-row border">
+            <div class="w-full lg:w-2/5 px-2 py-2">
+                <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                    alt="" class="w-full h-full object-cover rounded-md">
+            </div>
+
+            <div class="flex-1 px-2 py-2 relative">
+                <dl class="w-full pb-4">
+                    <dt class="hidden">description</dt>
+                    <dd class="font-bold text-lg">Oval French Cut Halo Engagement Set In 14K White Gold With A
+                        1.00 Ct.
+                        H-Color VS2-Clarity Emerald Cut Diamond</dd>
+                    <dt class="hidden">item</dt>
+                    <dd class="text-gray-600 font-medium text-base">Item#RB1077-WG14</dd>
+                    <dt class="hidden">Price</dt>
+                    <dd class="font-bold text-lg">$1,258.78</dd>
+                    <svg class="w-6 h-6 absolute top-3 -right-1" version="1.2" baseProfile="tiny"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 4c-4.419 0-8 3.582-8 8s3.581 8 8 8 8-3.582 8-8-3.581-8-8-8zm3.707 10.293c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-2.293-2.293-2.293 2.293c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023 0-1.414l2.293-2.293-2.293-2.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2.293 2.293 2.293-2.293c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-2.293 2.293 2.293 2.293z">
+                        </path>
+                    </svg>
+
+                </dl>
+
+                <form action="#">
+                    <div class="flex flex-col lg:flex-row px-4S">
+
+                        <div class="flex justify-between w-3/5 pb-4 gap-12">
+                            <div class="w-full lg:flex-1">
+                                <label for="ring-size">Ring Size</label>
+                                <select name="size" id="size" class="border pr-24">
+                                    <option value="0">Select size</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+
+                            <div class="w-full lg:flex-1">
+                                <label for="quantity">Quantity</label>
+                                <button class="flex gap-4 items-center border">
+                                    <svg class="w-4 h-4 " xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path>
+                                    </svg>
+                                    <span>1</span>
+                                    <svg class="w-4 h-4 " xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex-1">
+                            <label for="choose">Would you like to add a center Stone?</label>
+                            <div class="flex gap-8 items-center">
+                                <div class="inline-block">
+                                    <input id="input" class="peer/input" type="radio" name="status" checked />
+                                    <label for="input" class="peer-checked/input">Yes</label>
+                                </div>
+                                <div class="inline-block">
+                                    <input id="no" class="peer/no" type="radio" name="status" checked />
+                                    <label for="no" class="peer-checked/no">No</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex gap-8 items-center">
+                            <label for="plans">Select Protection Plans</label>
+                            <span><svg class="w-4 h-4 text-blue-800" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z">
+                                    </path>
+                                </svg></span>
+                        </div>
+                        <p>Enjoy peace of mind with a Care Plan from Jewellers Mutual.</p>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-col lg:flex-row w-full">
+                            <div class="flex flex-col lg:flex-row gap-2 col-span-6">
+                                <div class="w-full">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                        class="peer opacity-0 w-full h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="default-radio-1"
+                                        class="flex cursor-pointer  px-16 py-4 bg-white justify-center items-center h-10 w-full peer-checked:bg-blue-700 peer-checked:text-white text-[17px] text-sm font-medium text-gray-900 dark:text-gray-300">
+                                        <span><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M5 12l5 5l10 -10"></path>
+                                            </svg></span><span>NoPlan</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-span-6 divide-x-4">
+                                <div class="w-full">
+                                    <input id="default-radio-2" type="radio" value="" name="default-radio"
+                                        class="peer opacity-0 w-full h-4 text-blue-800 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="default-radio-2"
+                                        class="flex cursor-pointer  px-16 py-4 bg-white justify-center items-center h-10 w-full peer-checked:bg-blue-700 peer-checked:text-white text-[17px] text-sm font-medium text-gray-900 dark:text-gray-300"><span>3Years</span><span>$180.00</span></label>
+                                </div>
+                            </div>
+
+                            <div className="col-span-6 divide-x-2">
+                                <div class="w-full">
+                                    <input id="default-radio-3" type="radio" value="" name="default-radio"
+                                        class="peer opacity-0 w-full h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="default-radio-3"
+                                        class="flex cursor-pointer  px-16 py-4 bg-white justify-center items-center h-10 w-full peer-checked:bg-blue-700 peer-checked:text-white text-[17px] text-sm font-medium text-gray-900 dark:text-gray-300"><span>Lifetime</span><span>$425.00</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="inline-block">
+                    <span>Want to add engraving?</span>
+                    <span class="text-blue-800 font-medium">+ Add Engraving $30.00</span>
+                </div>
+                <div>
+                    <h1 class="font-medium">Matching Items</h1>
+                    <div class="relative overflow-x-auto flex flex-nowrap lg:flex flex-row  gap-2">
+
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+
+                        </div>
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+
+                        </div>
+
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+                        </div>
+
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+                        </div>
+
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+                        </div>
+
+
+                        <div class="w-1/3 shrink-0 lg:shrink">
+                            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                                alt="" class="w-full h-full object-cover border">
+                        </div>
+
+                        <svg class="w-8 h-8 absolute top-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                            fill="none">
+                            <path
+                                d="M6.146 10.146l-.353.354.707.707.354-.353-.708-.708zM9.5 7.5l.354.354.353-.354-.353-.354L9.5 7.5zM6.854 4.146L6.5 3.793l-.707.707.353.354.708-.708zm0 6.708l3-3-.708-.708-3 3 .708.708zm3-3.708l-3-3-.708.708 3 3 .708-.708zM7.5 1A6.5 6.5 0 0114 7.5h1A7.5 7.5 0 007.5 0v1zM1 7.5A6.5 6.5 0 017.5 1V0A7.5 7.5 0 000 7.5h1zM7.5 14A6.5 6.5 0 011 7.5H0A7.5 7.5 0 007.5 15v-1zm0 1A7.5 7.5 0 0015 7.5h-1A6.5 6.5 0 017.5 14v1z"
+                                fill="currentColor"></path>
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="flex flex-col w-full lg:flex-row justify-between gap-6">
+            <article class="border flex flex-1 justify-between px-2 py-4">
+                <div class="w-16">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                        alt="" class="w-12 h-full object-cover border">
+                </div>
+                <dl class="flex-1 px-2">
+                    <dt class="hidden">description</dt>
+                    <dd class="flex justify-between"><span class="font-medium"> Compliment Appraisals</span> <span
+                            class="font-bold text-base">$00.0</span> </dd>
+                    <dt class="hidden">Items</dt>
+
+                    <dd class="text-gray-600 font-medium text-xs">Item#RB1077-WG14</dd>
+                </dl>
+            </article>
+
+            <article class="border flex flex-1 justify-between px-2 py-4">
+                <div class="w-16">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                        alt="" class="w-12 h-full object-cover border">
+                </div>
+                <dl class="flex-1 px-2">
+                    <dt class="hidden">description</dt>
+                    <dd class="flex justify-between"><span class="font-medium"> Compliment Appraisals</span> <span
+                            class="font-bold text-base">$00.0</span> </dd>
+                    <dt class="hidden">Items</dt>
+
+                    <dd class="text-gray-600 font-medium text-xs">Item#RB1077-WG14</dd>
+                </dl>
+            </article>
+        </section>
+        <!-- section 2 ends  -->
+
+        <!-- section 3 starts -->
+        <section class="flex flex-col lg:flex-row border rounded-md p-4 mt-4">
+            <div class="flex-1 space-y-6 px-1">
+                <form action="#">
+
+                    <label for="instructions" class="block mb-2 font-medium text-lg">Special Instruction</label>
+                    <textarea id="instructions" rows="4"
+                        class="block p-2.5 w-full text-sm px-4 bg-gray-50 rounded-lg border border-gray-300 "></textarea>
+
+                </form>
+                <h2 class="font-medium text-base">Shipping</h2>
+                <div class=" flex flex-col lg:flex-row justify-between">
+                    <dl>
+                        <dt>Estimated Shipping Date</dt>
+                        <dd><time>Friday,August11,2023 </time></dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Shipping Method</dt>
+                        <dd>Free FeedEx Overnigh</dd>
+                    </dl>
+                </div>
+                <div class="border rounded-md bg-gray-200 px-2 py-3 w-full">
+                    <p>For Saturday delivery , call customer service at <span
+                            class="font-semibold">877-627-5094</span>APO/FPO orders will
+                        ship via USPS Priority Mail.</p>
+                    <div class="flex flex-col justify-between lg:flex-row">
+                        <span class="text-sm">View our <a href="#"
+                                class="underline text-blue-800 font-medium text-sm">Shipping Policy and Expedite
+                                Options</a></span>
+                        <span class="text-sm">For phone orders please mention: <span
+                                class="font-semibold">QFPHUG3</span> </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1">
+                <div class="flex flex-col pt-4 px-4 space-y-6 ">
+                    <div class="flex justify-between border-b pb-4">
+                        <span>Subtotal</span>
+                        <span class="font-semibold">$5364.8</span>
+                    </div>
+
+                    <div class="flex justify-between border-b pb-4">
+                        <span>Shipping</span>
+                        <span class="font-semibold">Free</span>
+                    </div>
+
+                    <div class="flex justify-between  pb-4">
+                        <span>Total Payable</span>
+                        <span class="font-semibold">$5364.8</span>
+                    </div>
+                    <form>
+                        <label for="coupun" class="">Coupon code</label>
+                        <div class="relative">
+                            <input type="text" id="coupon"
+                                class="py-3 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5  dark:border-gray-600"
+                                placeholder="Enter Code">
+                            <button class="text-blue-800 absolute top-2 right-1 cursor-pointer px-2">Apply</button>
+
+                        </div>
+
+                        <a href="#"><button
+                                class=" block rounded-md bg-blue-800 text-lg text-white px-4 py-2  mt-8 w-full">Continue</button></a>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- section 3 ends  -->
+
+        <!-- payment section   starts-->
+        <section>
+            <h3 class="font-semibold text-center">Payment Choices with Flexibility</h3>
+            <div class="flex items-center justify-center">
+                <div class="grid grid-cols-2 lg:grid-cols-6 gap-6 px-8 py-8">
+                    <figure class="flex-1">
+                        <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                            alt="" class="w-full h-full object-cover rounded-md">
+                        <figcaption class="text-xs">Debit Card or Credit Card</figcaption>
+                    </figure>
+
+
+
+                    <figure class="flex-1">
+                        <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                            alt="" class="w-full h-full object-cover rounded-md">
+                        <figcaption class="text-xs">Debit Card or Credit Card</figcaption>
+                    </figure>
+                    <figure class="flex-1">
+                        <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                            alt="" class="w-full h-full object-cover rounded-md">
+                        <figcaption class="text-xs">Debit Card or Credit Card</figcaption>
+                    </figure>
+
+                    <figure class="flex-1">
+                        <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                            alt="" class="w-full h-full object-cover rounded-md">
+                        <figcaption class="text-xs">Debit Card or Credit Card</figcaption>
+                    </figure>
+
+                    <figure class="flex-1">
+                        <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                            alt="" class="w-full h-full object-cover rounded-md">
+                        <figcaption class="text-xs">Debit Card or Credit Card</figcaption>
+                    </figure>
+
+                    <figure class="flex-1">
+                        <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVjG%2By3DD0biMLa2cnhhgIRvGC%2FdoZExGU4ZF0p7e05RNFOaTFBe0Bv8vZ4O2NFxCwdKvSHQptIoLOif1UnUtXsVrhC1q5yZ3lK4BkZ5S5A1rNmRqzRfVWxlibHBy4oqKX4rPr%2Bd4hQLklgRw5vMBqFIjnlFCvEsInPZ8Uyj%2BWW8WOzvB123JkkE%2BSONWExrCHX3TYbIp38Dh2ogPvKVi6qvkMVw465rz4DqER61%2Bo4WkxHgz4HA9ow77guuiHf1ENQ0Mvsf41%2B%2B9G3tSMG%2BQcPQT2I58d3m4BKk7GuTmaqqyaKMgvsDRI6RZEsk7vvjuz%2BIFV3qwH32pb8GYO3vB0wzVxvrfoVmK8bsJWXuohPOP9vrm38BDwD02Zr3RSgaJ%2F6R6JmsVy2bG1lMk0ZLOxCZSMJtC8E5cCheL66szPXMWelENmsO9ps%2BudTTDy6I2e82rV%2BDT0NbRAWhmkkKHkEGH%2BcYVghs%2Frw6Q0pwGQZiWDIADNZ6SxiZsnTUgqgfn5cCWw4hmuQbNL35dqE19objHHcoTRdU%2FANlznid3P33%2BVHr25xTOYaf0i%2BS74lxXIb&sz=w512"
+                            alt="" class="w-full h-full object-cover rounded-md">
+                        <figcaption class="text-xs">Debit Card or Credit Card</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- payment section ends  -->
+         
+        <!-- section starts  -->
+        <section>
+            <div class="px-8">
+                <h4 class="font-semibold text-lg">Keep Your Jewellery sparkling and Safe.</h4>
+                <p>Adiamore offers care plans and cleaners to offer you peace of mind when making your purchase</p>
+                <div class="flex flex-col lg:flex-row justify-between">
+                    <a href="#" class="bg-blue-600 text-white p-3">Purchase A Care Plan</a>
+                    <a href="#" class="underline text-blue-800 ">Explore All</a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-6 gap-14 px-8">
+                <article class="flex flex-col items-center p-4 space-y-2">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                        alt="" class="w-full h-full object-cover border">
+                    <h5 class="text-xs">Foaming Cleanser</h5>
+                    <span class="font-semibold">$12.00</span>
+                    <a href="#" class="border-2 border-blue-600 rounded-md text-blue-800 px-1 py-1">Add to Cart</a>
+                </article>
+
+                <article class="flex flex-col items-center p-4 space-y-2">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                        alt="" class="w-full h-full object-cover border">
+                    <h5 class="text-xs">Foaming Cleanser</h5>
+                    <span class="font-semibold">$12.00</span>
+                    <a href="#" class="border-2 border-blue-600 rounded-md text-blue-800 px-1 py-1">Add to Cart</a>
+                </article>
+
+                <article class="flex flex-col items-center p-4 space-y-2">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                        alt="" class="w-full h-full object-cover border">
+                    <h5 class="text-xs">Foaming Cleanser</h5>
+                    <span class="font-semibold">$12.00</span>
+                    <a href="#" class="border-2 border-blue-600 rounded-md text-blue-800 px-1 py-1">Add to Cart</a>
+                </article>
+
+                <article class="flex flex-col items-center p-4 space-y-2">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                        alt="" class="w-full h-full object-cover border">
+                    <h5 class="text-xs">Foaming Cleanser</h5>
+                    <span class="font-semibold">$12.00</span>
+                    <a href="#" class="border-2 border-blue-600 rounded-md text-blue-800 px-1 py-1">Add to Cart</a>
+                </article>
+
+                <article class="flex flex-col items-center p-4 space-y-2">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                        alt="" class="w-full h-full object-cover border">
+                    <h5 class="text-xs">Foaming Cleanser</h5>
+                    <span class="font-semibold">$12.00</span>
+                    <a href="#" class="border-2 border-blue-600 rounded-md text-blue-800 px-1 py-1">Add to Cart</a>
+                </article>
+
+                <article class="flex flex-col items-center p-4 space-y-2">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXSgnMT9PqyP9gKJ1K8SN2AGdfjWd9hEZvkxFUGGhbrTbVuLy41hgbLyD%2ByVBsbgZFcmcus%2FEbMYyVXtrR99oBBScXMKT62%2FZoxTLqGSCXfhi0Jph0T7Fok%2Fcc6dkD19%2BqZfTh7yerRkYQB3t1Bz%2BhhvwOVwWuLUhCJGW%2Bl0mcWtGn%2BipuLteSblRo4z8qj6PSV73BYxOa7AL%2BIv3b9j4xxykIfmr6YxKw8%2FiuvXQlgmeU6SR2gV3jd3vIQGAaFGb4VKxIQ6J4Qs6I0094DqC%2BftONHlCI5JzTln6Vmm%2FdNUj%2FzEKSPjh9qoNSJV6449FoFq3p5B0knKbceThHovbavVbNv2heGIVdobmftRT4gDQniZh91Oc1tRNqllLwQL2fcqI%2FL2ZGlzReTBS6nqOCjyJkuy9MKy%2BnwejACOk8W3v%2B0clX%2BdpPbH7xEZF00IWtApTme3WDNk9jzQeb%2B37b9uH5Uw3NkrdZ%2FkndLxZmZ5rouO1oFBlRI1l5QwDQDqxJo5OLM3oyiufVjQDrCDpXuqRHGCk6QAEOWuefAcwsAsG3JJMxKVcmtMlhCd8yyZNjj&sz=w512"
+                        alt="" class="w-full h-full object-cover border">
+                    <h5 class="text-xs">Foaming Cleanser</h5>
+                    <span class="font-semibold">$12.00</span>
+                    <a href="#" class="border-2 border-blue-600 rounded-md text-blue-800 px-1 py-1">Add to Cart</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
